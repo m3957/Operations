@@ -1,11 +1,20 @@
 from random import randrange
+from random import choice
+bonne_rep = ["Bien!", "Wow!", "Continue comme ça!"]
+mauv_rep = ["Tu peux faire mieux!", "Allez!", "Mauvaise réponse, petit bonhomme!"]
+operation_nb = 0
+nb_operations = int(input("Combien d'opérations? "))
+def topbar():
+    print(f"========= {operation_nb}/{nb_operations} =========")
 
 nb1 = randrange(0,10)
 nb2 = randrange(0,10)
 rep = nb2+nb2
-myrep = int(input(f"{nb1} + {nb2} = "))
 
+topbar()
+myrep = int(input(f"{nb1} + {nb2} = "))
+operation_nb = operation_nb+1
 if myrep == rep:
- print("you win")
+    print(choice(bonne_rep))
 else:
- print("you lose")
+    print(choice(mauv_rep))
