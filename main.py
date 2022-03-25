@@ -7,14 +7,18 @@ nb_operations = int(input("Combien d'opérations? "))
 def topbar():
     print(f"========= {operation_nb}/{nb_operations} =========")
 
-nb1 = randrange(0,10)
-nb2 = randrange(0,10)
-rep = nb2+nb2
+for i in range(nb_operations):
+    nb1 = randrange(0,10)
+    nb2 = randrange(0,10)
+    rep = nb1+nb2
 
-topbar()
-myrep = int(input(f"{nb1} + {nb2} = "))
-operation_nb = operation_nb+1
-if myrep == rep:
-    print(choice(bonne_rep))
-else:
-    print(choice(mauv_rep))
+    topbar()
+    myrep = int(input(f"{nb1} + {nb2} = "))
+    operation_nb = operation_nb+1
+    if myrep == rep:
+        print(choice(bonne_rep))
+        #print("yes")
+    else:
+        print(choice(mauv_rep))
+        #print("bouh")
+        print(f"La bonne réponse était {rep}.")
