@@ -7,11 +7,11 @@ nb_operations = int(input("Combien d'opérations? "))
 def topbar():
     print(f"========= {operation_nb}/{nb_operations} =========")
 
-for i in range(nb_operations):
+def jeu(): # À ajouter plus tard,
+    for i in range(nb_operations): # Ne pas utiliser nb_operations mais un machin de def
     nb1 = randrange(0,10)
     nb2 = randrange(0,10)
     rep = nb1+nb2
-
     topbar()
     myrep = int(input(f"{nb1} + {nb2} = "))
     operation_nb = operation_nb+1
@@ -22,3 +22,5 @@ for i in range(nb_operations):
         print(choice(mauv_rep))
         #print("bouh")
         print(f"La bonne réponse était {rep}.")
+
+jeu()
