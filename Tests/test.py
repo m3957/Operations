@@ -4,6 +4,7 @@
 from random import randrange
 from random import choice
 
+global nb_operations
 nb_operations = 0
 bonne_rep = ["Bien!", "Wow!", "Continue comme ça!"]
 mauv_rep = ["Tu peux faire mieux!", "Allez!", "Mauvaise réponse, petit bonhomme!"]
@@ -18,15 +19,16 @@ def info():
 
     Liens utiles:
         Scratch: https://scratch.mit.edu/users/m3957
-        Github: https://github.com/m3957
+        Github:  https://github.com/m3957
+        Rick A:  
 
     Faire Enter pour continuer
     """)
     input() # Enter pour continuer
 
 
-def topbar():
-    print(f"========= {operation_nb}/{nb_operations} =========")
+def topbar(nb_operations):
+    print(f"========= {operation_nb+1}/{nb_operations} =========")
 
 def jeu(): # À ajouter plus tard,
     nb_operations = int(input("Combien d'opérations? "))
@@ -34,8 +36,9 @@ def jeu(): # À ajouter plus tard,
         nb1 = randrange(0,10)
         nb2 = randrange(0,10)
         rep = nb1+nb2
-        topbar()
+        topbar(nb_operations)
         myrep = int(input(f"{nb1} + {nb2} = "))
+        global operation_nb
         operation_nb = +1
         if myrep == rep:
             print(choice(bonne_rep))
