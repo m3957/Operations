@@ -1,6 +1,3 @@
-# Ici, je teste le code, et regarde si il y a des trucs...
-# Je fais cela pour ne pas scrapper le programme original.
-
 from random import randrange
 from random import choice
 
