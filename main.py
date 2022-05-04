@@ -16,8 +16,7 @@ def info():
 
     Liens utiles:
         Scratch: https://scratch.mit.edu/users/m3957
-        Github:  https://github.com/m3957
-        Rick A:  
+        Github:  https://github.com/m3957 
 
     Faire Enter pour continuer
     """)

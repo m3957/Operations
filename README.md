@@ -1,8 +1,24 @@
 # Opérations
 Opérations est  un jeu pour pratiquer vos additions, soustractions, multiplications et divisions dans votre terminal préféré.
-### Screenshots
-Ouvrez le programme par vous même. **(placeholder)**
-![Jeu](screenshot.jpg)
+### Screenshot
+
+    Opérations
+    --------------Ver. 0.3--
+    1. Jouer
+    2. Info
+    3. Quitter
+
+    1
+    Combien d'opérations? 
+    5
+    ========= 1/5 =========
+    0 + 5 = 
+    5
+        Bien!
+    ========= 2/5 =========
+        7 + 9 = 
+
+
 ### Installation
 ##### Linux
 Ouvrez votre terminal et tapez:
