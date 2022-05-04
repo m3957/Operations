@@ -14,9 +14,9 @@ Opérations est  un jeu pour pratiquer vos additions, soustractions, multiplicat
     ========= 1/5 =========
     0 + 5 = 
     5
-        Bien!
+    Bien!
     ========= 2/5 =========
-        7 + 9 = 
+    7 + 9 = 
 
 
 ### Installation
