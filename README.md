@@ -22,11 +22,8 @@ Opérations est  un jeu pour pratiquer vos additions, soustractions, multiplicat
 ### Installation
 ##### Linux
 Ouvrez votre terminal et tapez:
-
-    sudo apt install python3 python3-pip git
-    git clone https://github.com/m3957/Operations.git
-    cd Operations
-    python3 main.py
+    
+    wget -qO- https://raw.githubusercontent.com/m3957/Operations/main/install?token=GHSAT0AAAAAABTYVKU34TMHTVRKRL2IAAR2YUIETUQ | bash
 ##### MacOS
 Ouvrez le site https://www.python.org/downloads/macos/ et téléchargez la dernière version de Python 3. Ensuite, faites Command + Espace pour ouvrir Spotlight et tapez dans la barre de recherche "Terminal". Vous devez ensuite tapez dans la ligne de commande:
 
