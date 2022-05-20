@@ -1,6 +1,6 @@
 # Opérations
 Opérations est  un jeu pour pratiquer vos additions, soustractions, multiplications et divisions dans votre terminal préféré.
-### Screenshot
+### À quoi ça ressemble
 
     Opérations
     --------------Ver. 0.3--
