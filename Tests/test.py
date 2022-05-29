@@ -3,11 +3,13 @@
 
 from random import randrange
 from random import choice
+from time import sleep
+import webbrowser
 
 global nb_operations
 nb_operations = 0
-bonne_rep = ["Bien!", "Wow!", "Continue comme ça!"]
-mauv_rep = ["Tu peux faire mieux!", "Allez!", "Mauvaise réponse, petit bonhomme!"]
+bonne_rep = ["Bien!", "Wow!", "Continue comme ça!", "Nice.", "Continue!", "Go Go Go!"]
+mauv_rep = ["Tu peux faire mieux!", "Allez!", "Mauvaise réponse, petit bonhomme!", "Common!"]
 
 operation_nb = 0
 
@@ -31,6 +33,18 @@ def topbar(nb_operations):
 
 def jeu(): # À ajouter plus tard,
     nb_operations = int(input("Combien d'opérations? "))
+    if nb_operations == 0:
+        print("""
+        Comment tu veux coder si tu ne peux pas
+        pratiquer tes maths? C'est le but du jeu!
+
+        Fait Enter pour continuer
+        """)
+        input()
+        print("Nous n'avons pas le choix pour toi...")
+        sleep(2)
+        print("On doit changer quelque chose...")
+        webbrowser.open('https://www.youtube.com/watch?v=igcoDFokKzU')
     for i in range(nb_operations): # Ne pas utiliser nb_operations mais un machin de def
         nb1 = randrange(0,10)
         nb2 = randrange(0,10)
