@@ -34,10 +34,6 @@ Ouvrez le site https://www.python.org/downloads/macos/ et téléchargez la derni
     cd Operations
     python3 main.py
 ##### Windows
-Ouvrez le site https://www.python.org/downloads/windows/ et téléchargez la dernière version de Python 3, ou allez sur le Microsoft Store. Ensuite, ouvrez le menu Windows, et faites Windows + R, puis tapez "cmd". Ensuite, faites cela:
-
-    git clone https://github.com/m3957/Operations.git
-    cd Operations
-    python3 main.py
+Ouvrez le site https://www.python.org/downloads/windows/ et téléchargez la dernière version de Python 3, ou allez sur le Microsoft Store. Ensuite, allez sur le haut de cette page, et cliquez sur Code, puis Download ZIP. Finalement, ouvrez le ZIP, puis ouvrez main.py .
     
 Vous me direz si ça marche, vu que je n'ai jamais essayé par moi-même (oups, les téléchargements vont réduire à cause de ça...)
